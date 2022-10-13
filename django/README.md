@@ -1,5 +1,5 @@
-# medStore
-Medical Store Database Management System using Django
+# EasyPharma
+Pharma store Management
 
 Setting up the project:
 
