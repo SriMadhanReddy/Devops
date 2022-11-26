@@ -18,6 +18,6 @@ URL routing is handled in the file: pharma/urls.py
 
 
 CICD setup Jenkins file stages
-1. SSH to the IAC deployed server 
+1. as we do not have anything to deploy we only use build 
 2. install requirements & setting up env 
-3. 
+3. start the server
