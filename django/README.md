@@ -15,3 +15,9 @@ run following command from terminal to launch server :
       > python manage.py runserver
 
 URL routing is handled in the file: pharma/urls.py
+
+
+CICD setup Jenkins file stages
+1. SSH to the IAC deployed server 
+2. install requirements & setting up env 
+3. 
