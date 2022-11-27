@@ -1,5 +1,5 @@
 pipeline{
-    agent ec2_slavenode
+    agent {ec2_slavenode}
     stages {
     
 
