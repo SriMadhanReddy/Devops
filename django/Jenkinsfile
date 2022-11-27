@@ -9,7 +9,7 @@ pipeline{
       steps  {
             sh '''
             chmod +x /home/ec2-user/workspace/Django-pipeline/django/scripts/envsetup.sh 
-            ./envsetup.sh 
+          bash  /home/ec2-user/workspace/Django-pipeline/django/scripts/envsetup.sh 
             '''}
         }
        
