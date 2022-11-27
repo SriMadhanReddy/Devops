@@ -10,7 +10,7 @@ fi
 source env/bin/activate
 
 
-pip3 install -r requirements.txt
+pip3 install -r /home/ec2-user/workspace/Django-pipeline/django/requirements.txt
 
 if [ -d "logs" ] 
 then
