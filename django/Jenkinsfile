@@ -1,0 +1,18 @@
+pipeline{
+    agent ec2_slavenode
+    stages {
+    
+
+     
+        stage('Setup Python Virtual ENV'){
+       
+      steps  {
+            sh '''
+            chmod +x envsetup.sh
+            ./envsetup.sh
+            '''}
+        }
+       
+        
+    }
+}
