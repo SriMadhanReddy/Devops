@@ -119,7 +119,7 @@
             </div>
             <table border="1" class="table table-responsive table-hover col-md-10">
                 <tr>
-                    <th>Purchase ID</th>
+                    <!-- <th>Purchase ID</th> -->
                     <th>Product Name</th>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -130,7 +130,7 @@
                 </tr>
                 {% for foo in purchase %}
                     <tr>
-                        <td class="idlink"><a href="/pharma/purchaseformview{{ foo.id }}/">{{ foo.id }}</a></td>
+                        <!-- <td class="idlink"><a href="/pharma/purchaseformview{{ foo.id }}/">{{ foo.id }}</a></td> -->
                         <td>{{ foo.pname }}</td>
                         <td>{{ foo.fname }}</td>
                         <td>{{ foo.lname }}</td>
@@ -142,23 +142,8 @@
                 {% endfor %}
             </table>
         </div>
-        <footer><h3>Click on a Purchase ID to Update or Delete the record.</h3></footer>
+        <!-- <footer><h3>Click on a Purchase ID to Update or Delete the record.</h3></footer> -->
     </div>
 </div>
-<footer id="contact" class="container-fluid text-center">
-    <div class="row">
-        <div class="left-footer col-lg-6">
-            <span class="footer-text">Have any queries? Contact us via email or call or Whatsapp  us on +91 6263056779.</span>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="right-footer col-lg-2">
-                <span class="linkto" onclick=" window.open('https://projectworlds.in/', '_blank'); return false;"><i
-                        class="fab fa-globe-square prefix mr-1"></i> Projectworlds</span>
-            <span>-</span>
-            <span class="linkto" data-toggle="modal" data-target="#modalContactForm"><i
-                    class="fa fa-envelope prefix mr-1"></i> Contact Us</span>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
