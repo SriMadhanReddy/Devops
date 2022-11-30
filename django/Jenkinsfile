@@ -23,7 +23,7 @@ pipeline{
         }
         stage('SonarQube analysis') {
   // requires SonarQube Scanner 2.8+
-        def scannerHome = tool 'sonar';
+        def scannerHome = tool '/home/ec2-user/sonar';
         withSonarQubeEnv('Sonarqube 7.9.1 ') {
         sh "${scannerHome}/bin/sonar-scanner"
         }
