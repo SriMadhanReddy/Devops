@@ -131,7 +131,8 @@
                 {% for foo in purchase %}
                     <tr>
                         <!-- <td class="idlink"><a href="/pharma/purchaseformview{{ foo.id }}/">{{ foo.id }}</a></td> -->
-                        <td>{{ foo.pname }}</td>
+                        <td class="pname"><a href="/pharma/purchaseformview{{ foo.id }}/">{{ foo.pname }}</a></td>
+                        <!-- <td>{{ foo.pname }}</td> -->
                         <td>{{ foo.fname }}</td>
                         <td>{{ foo.lname }}</td>
                         <td>{{ foo.phn_no }}</td>
@@ -142,7 +143,7 @@
                 {% endfor %}
             </table>
         </div>
-        <!-- <footer><h3>Click on a Purchase ID to Update or Delete the record.</h3></footer> -->
+        <footer><h3>Click on a Product Name to modify the details.</h3></footer>
     </div>
 </div>
 </body>
