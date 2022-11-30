@@ -1,16 +1,6 @@
-#!/bin/bash
-
-if [ -d "env" ] 
-then
-    echo "Python virtual environment exists." 
-else
-    python3 -m venv env
-fi
-
-source env/bin/activate
 
 
-pip3 install -r /home/ec2-user/workspace/Django-pipeline/django/requirements.txt
+pip install -r /home/ec2-user/workspace/Django-pipeline/django/requirements.txt
 
 if [ -d "logs" ] 
 then
