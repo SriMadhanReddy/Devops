@@ -16,10 +16,9 @@ pipeline{
         stage('Run python manage command'){
        
       steps  {
-            sh '''
-            chmod +x /home/ec2-user/workspace/Django-pipeline/django/scripts/python.sh 
-          bash  /home/ec2-user/workspace/Django-pipeline/django/scripts/python.sh 
-            '''}
+            sh 'python manage.py runserver 0.0.0.0:8000'
+            
+            }
         }
      
         
