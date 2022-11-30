@@ -116,7 +116,7 @@
             </div>
             <table border="1" class="col-md-10 table table-hover table-responsive">
                 <tr>
-                    <th>Customer ID</th>
+                    <!-- <th>Customer ID </th> -->
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Address</th>
@@ -125,8 +125,9 @@
                 </tr>
                 {% for foo in cust %}
                     <tr>
-                        <td class="idlink"><a href="/pharma/custformview{{ foo.id }}/">{{ foo.id }}</a></td>
-                        <td>{{ foo.fname }}</td>
+                        <!-- <td class="idlink"><a href="/pharma/custformview{{ foo.id }}/">{{ foo.id }}</a></td> -->
+                        <td class="fname"><a href="/pharma/custformview{{ foo.id }}/">{{ foo.fname }}</a></td>
+                        <!-- <td>{{ foo.fname }}</td> -->
                         <td>{{ foo.lname }}</td>
                         <td>{{ foo.address }}</td>
                         <td>{{ foo.phn_no }}</td>
@@ -135,23 +136,8 @@
                 {% endfor %}
             </table>
         </div>
-        <footer><h3>Click on a Customer ID to Update or Delete the record.</h3></footer>
+        <footer><h3>Click on a Customer Name to modify the details.</h3></footer>
     </div>
 </div>
-<footer id="contact" class="container-fluid text-center">
-    <div class="row">
-        <div class="left-footer col-lg-6">
-            <span class="footer-text">Have any queries? Contact us via email or call or Whatsapp  us on +91 6263056779.</span>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="right-footer col-lg-2">
-                <span class="linkto" onclick=" window.open('https://projectworlds.in/', '_blank'); return false;"><i
-                        class="fab fa-globe-square prefix mr-1"></i> Projectworlds</span>
-            <span>-</span>
-            <span class="linkto" data-toggle="modal" data-target="#modalContactForm"><i
-                    class="fa fa-envelope prefix mr-1"></i> Contact Us</span>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
