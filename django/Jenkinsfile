@@ -12,14 +12,6 @@ pipeline{
           bash  /home/ec2-user/workspace/Django-pipeline/django/scripts/envsetup.sh 
             '''}
         }
-        stage('SonarQube analysis') {
-  // requires SonarQube Scanner 2.8+
-       steps{
-        def scannerHome = tool '/home/ec2-user/sonar';
-        withSonarQubeEnv('Sonarqube') {
-        sh "${scannerHome}/bin/sonar-scanner"
-        }
-      }} 
        
         stage('Run python manage command'){
        
@@ -29,6 +21,6 @@ pipeline{
             }
         }
      
-  
+        
     }
 }
